@@ -13,6 +13,7 @@ public class Character : MonoBehaviour
     public Vector3 move = Vector3.zero;
 
 
+
     void Start()
     {
         characterController = this.GetComponent<CharacterController>();
@@ -21,7 +22,7 @@ public class Character : MonoBehaviour
 
     void Update()
     {
-
+        
         x = Input.GetAxis("Horizontal");
         z = Input.GetAxis("Vertical");
 

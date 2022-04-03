@@ -19,6 +19,7 @@ public class CamRotate : MonoBehaviour
         if(characterController.enabled == false)
         {
             transform.LookAt(target);
+            Camera.main.orthographic = true; // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         }
     }
 }
